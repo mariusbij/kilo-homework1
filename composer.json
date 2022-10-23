@@ -11,5 +11,7 @@
             "email": "darius.kasperavicius@kilo.health"
         }
     ],
-    "require": {}
+    "require": {
+        "webmozart/assert": "^1.11"
+    }
 }
