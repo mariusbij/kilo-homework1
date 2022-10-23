@@ -2,12 +2,16 @@
 
 declare(strict_types=1);
 
-namespace App\Decorator;
+namespace App\Kata1;
 
 class Price implements CostInterface
 {
-    public function cost(float $value): float
+    public function __construct(private float $value)
     {
-        return $value;
+    }
+
+    public function cost(): float
+    {
+        return $this->value;
     }
 }

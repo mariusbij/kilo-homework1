@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Decorator;
+namespace App\Kata1;
 
 class Discount implements CostInterface
 {
