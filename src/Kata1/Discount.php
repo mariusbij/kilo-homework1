@@ -6,7 +6,7 @@ namespace App\Kata1;
 
 class Discount implements CostInterface
 {
-    public function cost(float $value)
+    public function cost()
     {
         // TODO: Implement cost() method.
     }
