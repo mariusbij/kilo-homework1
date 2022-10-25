@@ -2,7 +2,8 @@
     "name": "dariuskasperavicius/clean",
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\": "src/",
+            "Test\\": "tests"
         }
     },
     "authors": [
@@ -12,6 +13,7 @@
         }
     ],
     "require": {
-        "webmozart/assert": "^1.11"
+        "webmozart/assert": "^1.11",
+        "phpunit/phpunit": "^9.5"
     }
 }

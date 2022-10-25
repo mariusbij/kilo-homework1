@@ -11,13 +11,30 @@ use Webmozart\Assert\Assert;
 
 class DemoRun
 {
-    public function run()
+    public function kata1()
     {
         // shipping = 8;
         // discount = 20;
-        $value = new Price(100);
+        // new Price(100);
 
-        //DO NOT EDIT BELLOW THIS
-        Assert::eq($value->cost(), 88);
+        return true;
+    }
+
+    public function kata2()
+    {
+        // shipping = 8;
+        // discount = 20;
+        // new Price(100);
+
+        return true;
+    }
+
+    public function kata3()
+    {
+        // shipping = 8;
+        // discount = 20;
+        // new Price(100);
+
+        return true;
     }
 }

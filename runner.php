@@ -3,4 +3,6 @@
 require_once "vendor/autoload.php";
 
 $demo = new App\DemoRun();
-$demo->run();
+$demo->kata1();
+$demo->kata2();
+$demo->kata3();
