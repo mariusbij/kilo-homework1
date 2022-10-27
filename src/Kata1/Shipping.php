@@ -6,8 +6,12 @@ namespace App\Kata1;
 
 class Shipping implements CostInterface
 {
-    public function cost()
+    public function __construct(private readonly float $shippingFee, private readonly CostInterface $price)
     {
-        // TODO: Implement cost() method.
+    }
+
+    public function cost(): float
+    {
+        return $this->price->cost() + $this->shippingFee;
     }
 }

@@ -6,8 +6,12 @@ namespace App\Kata1;
 
 class Discount implements CostInterface
 {
-    public function cost()
+    public function __construct(private readonly float $discount, private readonly CostInterface $price)
     {
-        // TODO: Implement cost() method.
+    }
+
+    public function cost(): float
+    {
+        return $this->price->cost() * (1 - $this->discount / 100);
     }
 }
