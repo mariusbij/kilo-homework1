@@ -10,6 +10,6 @@ class DpdShippingCalculator implements PriceCalculatorInterface
 {
     public function calculate(float $price, float $discount, float $tax): float
     {
-        return (new DpdShippingProviderAdapter(new DpdShippingProvider(), new Discount($discount, new Price($price))))->cost();
+        return (new DpdShippingAdapter(new DpdShippingProvider(), new Discount($discount, new Price($price))))->cost();
     }
 }
