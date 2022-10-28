@@ -11,6 +11,6 @@ class FreeShippingCalculator implements PriceCalculatorInterface
 {
     public function calculate(float $price, float $discount, float $tax): float
     {
-        return (new Discount($discount, new Price($price)))->cost();
+        return (new FreeShipping(new Discount($discount, new Price($price))))->cost();
     }
 }
